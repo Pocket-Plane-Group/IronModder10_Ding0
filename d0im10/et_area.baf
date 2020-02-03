@@ -1,0 +1,22 @@
+IF
+	Global("D0IM10","GLOBAL",0)
+	GlobalLT("chapter","GLOBAL",3)
+	GlobalGT("Deactivate0801","AR0800",0)
+THEN
+	RESPONSE #100
+		SetGlobal("D0IM10","GLOBAL",1)
+		CreateCreature("d0im10va",[2678.953],9)
+		CreateCreature("d0im10th",[2727.904],3)
+		Continue()
+END
+
+IF
+	GlobalLT("D0IM10","GLOBAL",10)
+	!GlobalLT("chapter","GLOBAL",3)
+THEN
+	RESPONSE #100
+		SetGlobal("D0IM10","GLOBAL",10)
+		ActionOverride("d0im10va",DestroySelf())
+		ActionOverride("d0im10th",DestroySelf())
+		Continue()
+END

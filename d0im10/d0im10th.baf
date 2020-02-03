@@ -1,0 +1,40 @@
+IF
+	See([PC])
+	Global("talk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("talk","LOCALS",1)
+		ActionOverride("d0im10va",StartDialogueNoSet("d0im10th"))
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Dead("d0im10va")
+	GlobalLT("talk","LOCALS",2)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("talk","LOCALS",2)
+		StartDialogueNoSet([PC])
+END
+
+IF
+	See("d0im10va")
+	GlobalGT("D0IM10","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Attack("d0im10va")
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END

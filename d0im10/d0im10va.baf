@@ -1,0 +1,37 @@
+IF
+	Dead("d0im10th")
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,VAMPIRE_BAT_FORM_CHANGE)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF])
+THEN
+	RESPONSE #100
+		Attack([GOODCUTOFF])
+END
+
+IF
+	See("d0im10th")
+	GlobalGT("D0IM10","GLOBAL",2)
+THEN
+	RESPONSE #100
+		Attack("d0im10th")
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
