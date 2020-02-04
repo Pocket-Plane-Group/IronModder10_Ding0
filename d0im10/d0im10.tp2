@@ -1,14 +1,16 @@
 BACKUP ~d0im10/backup~
 AUTHOR ~SimDing0~
 
-README ~d0im10/readme.txt~
+VERSION ~v1.1~
+
+README ~d0im10/d0im10-readme.txt~
 
 AUTO_TRA ~d0im10/lang/%s~
 
 LANGUAGE ~English~
          ~english~
 		 ~d0im10/lang/english/setup.tra~
-LANGUAGE ~Francais (traduction : )~
+LANGUAGE ~Francais (traduction : ProfErrata)~
          ~french~
 		 ~d0im10/lang/french/setup.tra~
 

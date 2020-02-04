@@ -14,13 +14,15 @@
 In chapter 2 visit the graveyard district and head over to 2584, 1117 or so. Observe that I should probably have been more ambitious.
 
 
-Our only veteran contestant serves the judges a dainty appetizer of a trick-or-treat tale, as one desperate Shadow Thief pulls one of the oldest tricks in the book to escape the predations of a hungry opponent. But were the judges satisfied by this morsel, or did they themselves feel cheated?
+Jury scoring:
 
-*Chez Ding0 has been known for his unique synthesis of differing cuisine, and the theme seemed to be tailor-made for his style. However, the dish was disappointingly short and lacking in substance.* - CamDawg
+>Our only veteran contestant serves the judges a dainty appetizer of a trick-or-treat tale, as one desperate Shadow Thief pulls one of the oldest tricks in the book to escape the predations of a hungry opponent. But were the judges satisfied by this morsel, or did they themselves feel cheated?
 
-*Our chef provides a hastily prepared snack, which tells a story of how to use old tricks in combat. It's still better than any micro-waved frozen dinner, however, and maybe some day will see the Iron Ding0 serve a real meal. A feast to behold!* - SConrad
+>*Chez Ding0 has been known for his unique synthesis of differing cuisine, and the theme seemed to be tailor-made for his style. However, the dish was disappointingly short and lacking in substance.* - CamDawg
 
-*I always expect so much from this chef. SimDing0 is known for big flavors, and elaborate garnishes. This was somewhat of a disappointment, and left the table still hungry.* - MTS
+>*Our chef provides a hastily prepared snack, which tells a story of how to use old tricks in combat. It's still better than any micro-waved frozen dinner, however, and maybe some day will see the Iron Ding0 serve a real meal. A feast to behold!* - SConrad
+
+>*I always expect so much from this chef. SimDing0 is known for big flavors, and elaborate garnishes. This was somewhat of a disappointment, and left the table still hungry.* - MTS
 
 
 <hr>
@@ -40,8 +42,11 @@ This modification is not developed, supported, or endorsed by BioWare™ or Interp
 
 - Moved tp2 file into mod top folder and renamed *setup-d0im10.tp2* -> *d0im10.tp2* to support AL|EN's "Project Infinity".
 - Added *d0im10.ini* metadata file to support AL|EN's "Project Infinity".
+- Replaced `AT_INTERACTIVE_EXIT` command with more accurate `README` one.
+- Added VERSION flag.
 - Removed useless backup folder.
-- Updated and renamed readme file to *s0im10-readme-.txt*.
+- Lower cased files.
+- Updated and renamed readme file to *d0im10-readme.txt*.
 - Traified mod.
 - Added French translation (ProfErrata).
 - Updated WeiDU installer to v246.
